@@ -18,5 +18,5 @@ export default defineConfig({
         cssVariable: "--font-abril-fatface",
         weights: ['200', '400']
     }],
-    site: 'https://jesuiscalypso.github.io'
+    site: 'https://jenesuispas.dev'
 });
