@@ -1,17 +1,38 @@
 ---
+import PageWrapper from '../components/PageWrapper.astro'
+import '../assets/css/index.css'
+import avatar from '../assets/images/avatar.jpg'
+import { Image } from 'astro:assets'
+import { Icon } from 'astro-icon/components'
+
+const links = {
+    github: "https://github.com/jesuiscalypso/",
+    website: "https://jenesuispas.nekoweb.org/home/"
+}
 
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<PageWrapper title='Index'>
+    <section class='container-wrapper'>
+        <div class='main-container'>
+            <div class='image-row'>
+                <Image
+                    src={avatar}
+                    alt="A sleep deprived man drawn in a style reminiscent of manga."
+                    class={"profile-picture"}
+                />
+            </div>
+            <div class="bio-row">
+                <h1 class="bio-header">Hey, what's up?</h1>
+                    <p class='bio'>
+                        <span>I'm <span class='bold'>Calypso</span>, a freelance software developer currently focused on the web.</span>
+                        <span>My hobbies include writing, playing tabletop role-playing ames, mapmaking and worldbuilding.</span>
+                        <span>Shoot me a message if you need any devwork done!</span>
+                    </p>
+                <div class="socials">
+                    <a href={links.github} target="_blank"><Icon name='brandico:github' size={64}/></a>
+                    <a href={links.website} target="_blank"><Icon name='material-symbols:globe' size={64}/></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</PageWrapper>

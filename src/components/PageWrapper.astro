@@ -1,0 +1,19 @@
+---
+import SiteHead from './SiteHead.astro'
+import '../assets/css/reset.css'
+import '../assets/css/global.css'
+
+type Props = {
+    title: string
+}
+
+const {title} = Astro.props
+---
+
+
+<html lang="en">
+    <SiteHead title={title}/>
+    <body>
+        <slot />
+	</body>
+</html>

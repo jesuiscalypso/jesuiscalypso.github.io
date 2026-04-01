@@ -12,6 +12,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^6.1.2"
+    "@fontsource/abril-fatface": "^5.2.7",
+    "@fontsource/roboto": "^5.2.10",
+    "astro": "^6.1.2",
+    "astro-icon": "^1.1.5"
+  },
+  "devDependencies": {
+    "@iconify-json/brandico": "^1.2.3",
+    "@iconify-json/material-symbols": "^1.2.64"
   }
 }

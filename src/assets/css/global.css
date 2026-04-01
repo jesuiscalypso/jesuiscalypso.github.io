@@ -1,0 +1,19 @@
+body,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --base-unit: 0.25rem;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-abril-fatface);
+}
+
+p {
+    font-family: var(--font-roboto);
+}
